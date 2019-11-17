@@ -12,6 +12,7 @@
     .container {
       width: 1200px;
     }
+    
 
   }
 
@@ -1269,7 +1270,7 @@
           }
 
   }
-
+/*********************************************************************************************/
   @media screen and (max-width: 736px) {
 
     .row {
@@ -1998,11 +1999,12 @@ button,
 
     #main > section.dark {
       color: #ddd;
-      color: rgba(255, 255, 255, 0.75);
+      /* color: rgba(255, 255, 255, 0.75); */
     }
 
       #main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-        color: inherit;
+        color: inherit;        
+        font-weight: bold;
       }
 
       #main > section.dark strong {
@@ -2021,13 +2023,14 @@ button,
 
     #main > section.cover {
       padding: 10em 0;
-      background-size: cover;
-      background-position: center center;
+      /* background-size: cover; */
+      /* background-position: center center; */
     }
 
     #main > section.one {
-      background-color: #81918E;
-      background-image: url("../../images/banner.jpeg");
+      /* background-color: #81918E; */
+      /* background-image: url("../../images/banner.jpeg"); */
+      position: relative;
     }
 
     #main > section.two {
@@ -2093,9 +2096,10 @@ button,
     #main > section {
       padding: 3em 0;
     }
-
+    
     #main section.cover {
       padding: 5em 0;
+      height: 100vh;
     }
 
 }
@@ -2208,7 +2212,7 @@ button,
 
   /* Header */
 
-    #header {
+    /* #header {
       -moz-backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
@@ -2233,7 +2237,7 @@ button,
       width: 275px;
       background: #222729 url("images/overlay.png");
       box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
-    }
+    } */
 
       #header .top {
         position: relative;
@@ -2254,8 +2258,8 @@ button,
     #nav ul li a {
       padding: 0.5em 1.25em 0.5em 1.25em;
     }
-
-    #headerToggle {
+/* 
+   #headerToggle {
       -moz-backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
@@ -2271,7 +2275,7 @@ button,
       top: 0;
       width: 3.25em;
       z-index: 10001;
-    }
+    } 
 
       #headerToggle .toggle {
         position: absolute;
@@ -2304,21 +2308,21 @@ button,
           width: 3.25em;
           height: 2.25em;
           line-height: 2.25em;
-        }
+        } */
 
-    body.header-visible #main {
+    /* body.header-visible #main {
       -moz-transform: translateX(275px);
       -webkit-transform: translateX(275px);
       -ms-transform: translateX(275px);
       transform: translateX(275px);
-    }
+    } */
 
-    body.header-visible #headerToggle {
+    /* body.header-visible #headerToggle {
       -moz-transform: translateX(275px);
       -webkit-transform: translateX(275px);
       -ms-transform: translateX(275px);
       transform: translateX(275px);
-    }
+    } */
 
     body.header-visible #header {
       -moz-transform: translateX(0);
@@ -2376,6 +2380,8 @@ button,
 
     .container {
       padding: 0 15px 0 15px;
+      /* min-height: 100%; */
+      /* height: 100vh; */
     }
 
   /* List */
@@ -2389,10 +2395,14 @@ button,
 
     #main > section {
       padding: 2em 0;
+      /* min-height: 100%; */
+      /* height: 100vh; */
     }
 
     #main section.cover {
       padding: 4em 0em;
+      /* min-height: 100%; */
+      /* height: 100vh; */
     }
 
       #main section.cover header {
